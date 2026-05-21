@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Jewellery</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #b8860b, #ffd700);
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background-color: #8b6508;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffbf0035;
+    }
+
+    .hero {
+      background: url('https://img.freepik.com/premium-photo/necklace-with-gold-chain-necklace-that-says-love_1248089-15453.jpg?semt=ais_hybrid&w=740&q=80') center/cover no-repeat;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-content {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: hwb(195 94% 3%);
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #e6c200;
+    }
+
+    .collections {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .collections h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #8b6508;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+      color: #b8860b;
+    }
+
+    .about {
+      background-color: #fff3d6;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .about h2 {
+      color: #8b6508;
+      margin-bottom: 20px;
+      font-size: 35px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    @media(max-width: 768px) {
+      .hero h2 {
+        font-size: 34px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Royal Jewellery</h1>
+    <p>Elegance That Lasts Forever</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Collections</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2> Royal Spark</h2>
+      <p>Discover timeless beauty and sparkling elegance.</p>
+      <a href="#" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section class="collections">
+    <h2>Our Collections</h2>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.stockcake.com/public/b/4/b/b4ba4bbd-2c9b-4887-90f7-d98d36c90ade_large/elegant-diamond-necklace-stockcake.jpg" alt="Elegant Diamond Necklace">
+        <div class="card-content">
+          <h3>Elegant Diamond Necklace</h3>
+          <p>Beautiful handcrafted diamond necklace designs.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?q=80&w=800&auto=format&fit=crop" alt="Gold earrings">
+        <div class="card-content">
+          <h3>Gold earrings</h3>
+          <p>Stylish earrings crafted with perfection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about"> 
+    <h2>About Us</h2>
+<p style="font-weight: bold; font-style: italic;">
+  Royal Jewellery brings you premium quality jewellery designs that blend tradition with modern elegance.
+  Our exclusive collections are crafted with passion and perfection to make every occasion memorable.
+</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Royal Jewellery | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
+    
+<!-- Jewellery Categories Section -->
+
+<section class="categories">
+
+  <h2>Explore Jewellery Categories</h2>
+
+  <div class="category-container">
+
+    <!-- Jewellery Type -->
+    <div class="category-box">
+      <h3>Jewellery Types</h3>
+      <ul>
+        <li>Necklaces</li>
+        <li>Rings</li>
+        <li>Earrings</li>
+        <li>Bracelets</li>
+        <li>Bangles</li>
+        <li>Pendants</li>
+      </ul>
+    </div>
+
+    <!-- Product Type -->
+    <div class="category-box">
+      <h3>Product Type</h3>
+      <ul>
+        <li>Gold Jewellery</li>
+        <li>Diamond Jewellery</li>
+        <li>Silver Jewellery</li>
+        <li>Platinum Jewellery</li>
+        <li>Kundan Jewellery</li>
+        <li>Pearl Jewellery</li>
+      </ul>
+    </div>
+
+    <!-- Price -->
+    <div class="category-box">
+      <h3>Price Range</h3>
+      <ul>
+        <li>Under ₹5,000</li>
+        <li>₹5,000 - ₹10,000</li>
+        <li>₹10,000 - ₹25,000</li>
+        <li>₹25,000 - ₹50,000</li>
+        <li>Above ₹50,000</li>
+      </ul>
+    </div>
+
+    <!-- Metal Color -->
+    <div class="category-box">
+      <h3>Metal Color</h3>
+      <ul>
+        <li>Yellow Gold</li>
+        <li>Rose Gold</li>
+        <li>White Gold</li>
+        <li>Silver</li>
+        <li>Platinum</li>
+      </ul>
+    </div>
+
+    <!-- Shop by Style -->
+    <div class="category-box">
+      <h3>Shop by Style</h3>
+      <ul>
+        <li>Traditional</li>
+        <li>Modern</li>
+        <li>Minimal</li>
+        <li>Vintage</li>
+        <li>Luxury</li>
+      </ul>
+    </div>
+
+    <!-- Occasions -->
+    <div class="category-box">
+      <h3>Occasions</h3>
+      <ul>
+        <li>Wedding</li>
+        <li>Engagement</li>
+        <li>Festival</li>
+        <li>Party Wear</li>
+        <li>Daily Wear</li>
+      </ul>
+    </div>
+
+    <!-- Shop by Design -->
+    <div class="category-box">
+      <h3>Shop by Design</h3>
+      <ul>
+        <li>Floral Design</li>
+        <li>Temple Design</li>
+        <li>Antique Design</li>
+        <li>Contemporary Design</li>
+        <li>Custom Design</li>
+      </ul>
+    </div>
+
+    <!-- Size -->
+    <div class="category-box">
+      <h3>Size</h3>
+      <ul>
+        <li>Small</li>
+        <li>Medium</li>
+        <li>Large</li>
+        <li>Adjustable</li>
+      </ul>
+    </div>
+
+    <!-- Gender -->
+    <div class="category-box">
+      <h3>Gender</h3>
+      <ul>
+        <li>Women</li>
+        <li>Men</li>
+        <li>Kids</li>
+        <li>Unisex</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<style>
+
+.categories {
+  padding: 50px 20px;
+  background-color: #fff8ef;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 38px;
+  margin-bottom: 40px;
+  color: #8b6508;
+}
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.category-box {
+  background: white;
+  width: 280px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: 0.3s;
+}
+
+.category-box:hover {
+  transform: translateY(-8px);
+}
+
+.category-box h3 {
+  color: #b8860b;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.category-box ul {
+  list-style: none;
+}
+
+.category-box ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 17px;
+}
+
+.category-box ul li:last-child {
+  border-bottom: none;
+}
+
+@media(max-width: 768px) {
+  .category-box {
+    width: 100%;
+  }
+}
+
+</style>
